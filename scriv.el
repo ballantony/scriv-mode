@@ -1,4 +1,4 @@
-(defun my-sidebar-occur()
+(defun my-sidebars()
 ;;(interactive)
   (setq fit-window-to-buffer-horizontally t)
   (setq window-resize-pixelwise t)
@@ -32,7 +32,7 @@
   (when (require 'wc-mode nil t)
     (wc-mode))
   (toggle-frame-maximized)
-  (my-sidebar-occur)
+  (my-sidebars)
   (global-set-key (kbd "M-s i") 'my-indirect-buffer))
 
 
